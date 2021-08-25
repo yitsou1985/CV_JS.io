@@ -16,7 +16,7 @@
                     &#9776;
                 </button>
             </div >
-            <ul >
+            <ul>
             <li >Home&nbsp;&nbsp;
                 <ul class="submenu" > 
                     <li ><a href="home.html" >Titre 1</a></li>
@@ -25,9 +25,9 @@
                     
                 </ul>
             </li>
-            <li>About&nbsp;&nbsp;
+            <li> About&nbsp;&nbsp;
                 <ul class="submenu" > 
-                    <li>Titre 1</li>
+                   <a href="About.html"></a> <li  >Titre 1</li>
                     <li>Titre 2</li>
                     <li>Titre 3</li>
                 </ul>
@@ -47,8 +47,10 @@
                 </ul> </li>
                 <li>
                     <ul class="avatar_menu"  >
-                        <li><img class="avatar-profile" id="img" src="selfi.jpeg"   ></img></li>
-                       
+                        <li> <img onclick="document.getElementById('id01').style.display='block'" class="avatar-profile" id="img" src="selfi.jpeg"   ></img></li>
+                      <ul class="avatar-profile" id="avatar_submenu" >
+                          
+                        </ul> 
                     </ul>
                 </li>
                 <!-- <img class=".img" src="selfi.jpeg" width="50px" ></img> -->
@@ -60,7 +62,7 @@
 
         </header>
 
-<main class="grid-main" >
+      <main class="grid-main" >
    
    <div class="box">Junior JS motivated for a new challenge.<br>
     Love site creation and open to work.<br> Seriously and perceiving
@@ -87,6 +89,35 @@
        <img  class="box1" src="Suisse3.jpeg" width="60px" ></img>
        <img class="box1" src="Suisse4.jpeg" width="60px" ></img>
        <img class="box1"src="Suisse.jpeg" width="60px" ></img>
+     
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="selfi.jpeg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
        
    </footer>
    <footer class="box2" >All right reserved by &#169;</footer>
@@ -98,8 +129,14 @@
             onclick=closeMenu()>X</button>
             <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="index.html">About</a></li><br><br>
-                <img class="img" src="selfi.jpeg" />
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li> <a href="#">Clients</a></li>
+                <li>
+                    <a href="#">Contact</a>
+                </li> 
+                <br><br>
+               <a href="login.html"><img class="img" src="selfi.jpeg" /></a> 
                
                    
                  
@@ -109,5 +146,7 @@
     </div>
 
     <script src="grid.js"></script>
+    
+    
 </body>
 </html>
