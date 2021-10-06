@@ -4,7 +4,7 @@ body {
   font: 1.6rem Helvetica, Arial;
   margin: 0;
   cursor: pointer;
-
+ 
 }
 
 
@@ -221,7 +221,12 @@ img {
   top: 0px;
   right: 1rem;
 }
-
+.key-profile{
+  position: fixed;
+  top: 0px;
+  right: 5.5rem;
+ 
+}
 
 /* #avatar_submenu{
   
