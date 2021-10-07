@@ -30,6 +30,7 @@ h3 {
   width: 15rem;
   background-color: lightgray;
   height: 100%;
+  border-right: solid 2px gold;
 
 }
 .sidebar a:hover {
@@ -81,6 +82,7 @@ header {
   width: 100%;
   align-items: center;
   padding: 0.5rem;
+  border-bottom: solid 2px gold;
 }
 
 .grid-main {
