@@ -5,17 +5,24 @@ section{
     align-items: center;
 }
 h1{
+    /* width: 200px; */
+
+
     font-size: 2.5rem;
-    text-align: center;
+    
     padding-block-end: 1rem 0;
     color: crimson;
+    background-image: -webkit-linear-gradient(65deg,linen 50%,azure 50%);
+
 }
+
 .accordion{
-    background-color: darkmagenta;
-    color: black;
+   background-image: -webkit-linear-gradient(65deg,linen 50%,azure 50%);
+   color: crimson;
     cursor: pointer; ;
     padding: 1.6rem;
     width:100%;
     border-bottom: 1px solid cornflowerblue;
+    text-align: center
 
 }
